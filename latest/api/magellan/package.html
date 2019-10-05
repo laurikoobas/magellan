@@ -1,0 +1,744 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>magellan - magellan</title>
+          <meta name="description" content="magellan - magellan" />
+          <meta name="keywords" content="magellan magellan" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../lib/template.js"></script>
+      <script type="text/javascript" src="../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../index.html';
+            var hash = 'magellan.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../lib/package_big.png" />
+        
+        <h1>magellan</h1><span class="permalink">
+      <a href="../index.html#magellan.package" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">magellan</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="magellan.BoundingBox" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="BoundingBoxextendsProductwithSerializable"></a>
+      <a id="BoundingBox:BoundingBox"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="BoundingBox.html"><span class="name">BoundingBox</span></a><span class="params">(<span name="xmin">xmin: <span class="extype" name="scala.Double">Double</span></span>, <span name="ymin">ymin: <span class="extype" name="scala.Double">Double</span></span>, <span name="xmax">xmax: <span class="extype" name="scala.Double">Double</span></span>, <span name="ymax">ymax: <span class="extype" name="scala.Double">Double</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@BoundingBoxextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A bounding box is an axis parallel rectangle.</p><div class="fullcomment"><div class="comment cmt"><p>A bounding box is an axis parallel rectangle. It is completely specified by
+the bottom left and top right points.
+</p></div><dl class="paramcmts block"><dt class="param">xmin</dt><dd class="cmt"><p>the minimum x coordinate of the rectangle.</p></dd><dt class="param">ymin</dt><dd class="cmt"><p>the minimum y coordinate of the rectangle.</p></dd><dt class="param">xmax</dt><dd class="cmt"><p>the maximum x coordinate of the rectangle.</p></dd><dt class="param">ymax</dt><dd class="cmt"><p>the maximum y coordinate of the rectangle.</p></dd></dl></div>
+    </li><li name="magellan.CRS" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="CRSextendsProductwithSerializable"></a>
+      <a id="CRS:CRS"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="CRS.html"><span class="name">CRS</span></a><span class="params">(<span name="type">type: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="properties">properties: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@CRSextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.DefaultSource" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DefaultSourceextendsRelationProviderwithSchemaRelationProvider"></a>
+      <a id="DefaultSource:DefaultSource"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DefaultSource.html"><span class="name">DefaultSource</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.sources.RelationProvider">RelationProvider</span> with <span class="extype" name="org.apache.spark.sql.sources.SchemaRelationProvider">SchemaRelationProvider</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@DefaultSourceextendsRelationProviderwithSchemaRelationProvider" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Provides access to Shapefile Formatted data from pure SQL statements.</p>
+    </li><li name="magellan.DoubleArrayData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DoubleArrayDataextendsArrayData"></a>
+      <a id="DoubleArrayData:DoubleArrayData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="DoubleArrayData.html"><span class="name">DoubleArrayData</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.catalyst.util.ArrayData">ArrayData</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@DoubleArrayDataextendsArrayData" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Feature" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FeatureextendsProductwithSerializable"></a>
+      <a id="Feature:Feature"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Feature.html"><span class="name">Feature</span></a><span class="params">(<span name="type">type: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="properties">properties: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]]</span>, <span name="geometry">geometry: <a href="Geometry.html" class="extype" name="magellan.Geometry">Geometry</a></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@FeatureextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.GeoJSON" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeoJSONextendsProductwithSerializable"></a>
+      <a id="GeoJSON:GeoJSON"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoJSON.html"><span class="name">GeoJSON</span></a><span class="params">(<span name="type">type: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="crs">crs: <span class="extype" name="scala.Option">Option</span>[<a href="CRS.html" class="extype" name="magellan.CRS">CRS</a>]</span>, <span name="features">features: <span class="extype" name="scala.List">List</span>[<a href="Feature.html" class="extype" name="magellan.Feature">Feature</a>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@GeoJSONextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.GeoJSONRelation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="GeoJSONRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable"></a>
+      <a id="GeoJSONRelation:GeoJSONRelation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoJSONRelation.html"><span class="name">GeoJSONRelation</span></a><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parameters">parameters: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span name="sqlContext">sqlContext: <span class="extype" name="org.apache.spark.sql.SQLContext">SQLContext</span></span>)</span><span class="result"> extends <span class="extype" name="org.apache.spark.sql.sources.BaseRelation">BaseRelation</span> with <span class="extype" name="magellan.SpatialRelation">SpatialRelation</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@GeoJSONRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A GeoJSON relation is the entry point for working with GeoJSON formats.</p><div class="fullcomment"><div class="comment cmt"><p>A GeoJSON relation is the entry point for working with GeoJSON formats.
+GeoJSON is a format for encoding a variety of geographic data structures.
+A GeoJSON object may represent a geometry, a feature, or a collection of features.
+GeoJSON supports the following geometry types: Point, LineString, Polygon,
+MultiPoint, MultiLineString, MultiPolygon, and GeometryCollection.
+Features in GeoJSON contain a geometry object and additional properties,
+and a feature collection represents a list of features.
+A complete GeoJSON data structure is always an object (in JSON terms).
+In GeoJSON, an object consists of a collection of name/value pairs -- also called members.
+For each member, the name is always a string.
+Member values are either a string, number, object, array
+or one of the literals: true, false, and null.
+An array consists of elements where each element is a value as described above.
+</p></div></div>
+    </li><li name="magellan.Geometry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeometryextendsProductwithSerializable"></a>
+      <a id="Geometry:Geometry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Geometry.html"><span class="name">Geometry</span></a><span class="params">(<span name="type">type: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="coordinates">coordinates: <span class="extype" name="org.json4s.JValue">JValue</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@GeometryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.IntegerArrayData" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="IntegerArrayDataextendsArrayData"></a>
+      <a id="IntegerArrayData:IntegerArrayData"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="IntegerArrayData.html"><span class="name">IntegerArrayData</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.catalyst.util.ArrayData">ArrayData</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@IntegerArrayDataextendsArrayData" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Line" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="LineextendsDataTypewithShape"></a>
+      <a id="Line:Line"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Line.html"><span class="name">Line</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Shape.html" class="extype" name="magellan.Shape">Shape</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@LineextendsDataTypewithShape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Line segment between two points.</p><div class="fullcomment"><div class="comment cmt"><p>Line segment between two points.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SQLUserDefinedType</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="magellan.OsmFileRelation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OsmFileRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable"></a>
+      <a id="OsmFileRelation:OsmFileRelation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="OsmFileRelation.html"><span class="name">OsmFileRelation</span></a><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parameters">parameters: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span name="sqlContext">sqlContext: <span class="extype" name="org.apache.spark.sql.SQLContext">SQLContext</span></span>)</span><span class="result"> extends <span class="extype" name="org.apache.spark.sql.sources.BaseRelation">BaseRelation</span> with <span class="extype" name="magellan.SpatialRelation">SpatialRelation</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@OsmFileRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Point" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PointextendsDataTypewithShape"></a>
+      <a id="Point:Point"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Point.html"><span class="name">Point</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Shape.html" class="extype" name="magellan.Shape">Shape</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@PointextendsDataTypewithShape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A point is a zero dimensional shape.</p><div class="fullcomment"><div class="comment cmt"><p>A point is a zero dimensional shape.
+The coordinates of a point can be in linear units such as feet or meters,
+or they can be in angular units such as degrees or radians.
+The associated spatial reference specifies the units of the coordinates.
+In the case of a geographic coordinate system, the x-coordinate is the longitude
+and the y-coordinate is the latitude.
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SQLUserDefinedType</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="magellan.PolyLine" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PolyLineextendsDataTypewithShape"></a>
+      <a id="PolyLine:PolyLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PolyLine.html"><span class="name">PolyLine</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Shape.html" class="extype" name="magellan.Shape">Shape</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@PolyLineextendsDataTypewithShape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A PolyLine is an ordered set of vertices that consists of one or more parts.</p><div class="fullcomment"><div class="comment cmt"><p>A PolyLine is an ordered set of vertices that consists of one or more parts.
+A part is a connected sequence of two or more points.
+Parts may or may not be connected to one another.
+Parts may or may not intersect one another
+</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SQLUserDefinedType</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="magellan.Polygon" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="PolygonextendsDataTypewithShape"></a>
+      <a id="Polygon:Polygon"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Polygon.html"><span class="name">Polygon</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Shape.html" class="extype" name="magellan.Shape">Shape</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@PolygonextendsDataTypewithShape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A polygon consists of one or more rings.</p><div class="fullcomment"><div class="comment cmt"><p>A polygon consists of one or more rings. A ring is a connected sequence of four or more points
+that form a closed, non-self-intersecting loop. A polygon may contain multiple outer rings.
+The order of vertices or orientation for a ring indicates which side of the ring is the interior
+of the polygon. The neighborhood to the right of an observer walking along the ring
+in vertex order is the neighborhood inside the polygon.
+Vertices of rings defining holes in polygons are in a counterclockwise direction.
+Vertices for a single, ringed polygon are, therefore, always in clockwise order.
+The rings of a polygon are referred to as its parts.</p></div><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SQLUserDefinedType</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="magellan.PolygonDeserializer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PolygonDeserializerextendsJsonDeserializer[magellan.Polygon]"></a>
+      <a id="PolygonDeserializer:PolygonDeserializer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="PolygonDeserializer.html"><span class="name">PolygonDeserializer</span></a><span class="result"> extends <span class="extype" name="com.fasterxml.jackson.databind.JsonDeserializer">JsonDeserializer</span>[<a href="Polygon.html" class="extype" name="magellan.Polygon">Polygon</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@PolygonDeserializerextendsJsonDeserializer[magellan.Polygon]" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Relate" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="RelateextendsAnyRef"></a>
+      <a id="Relate:Relate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Relate.html"><span class="name">Relate</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@RelateextendsAnyRef" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Shape" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="ShapeextendsDataTypewithSerializable"></a>
+      <a id="Shape:Shape"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Shape.html"><span class="name">Shape</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@ShapeextendsDataTypewithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An abstraction for a geometric shape.</p>
+    </li><li name="magellan.ShapeFileRelation" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShapeFileRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable"></a>
+      <a id="ShapeFileRelation:ShapeFileRelation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShapeFileRelation.html"><span class="name">ShapeFileRelation</span></a><span class="params">(<span name="path">path: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="parameters">parameters: <span class="extype" name="scala.Predef.Map">Map</span>[<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>]</span>)</span><span class="params">(<span name="sqlContext">sqlContext: <span class="extype" name="org.apache.spark.sql.SQLContext">SQLContext</span></span>)</span><span class="result"> extends <span class="extype" name="org.apache.spark.sql.sources.BaseRelation">BaseRelation</span> with <span class="extype" name="magellan.SpatialRelation">SpatialRelation</span> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@ShapeFileRelationextendsBaseRelationwithSpatialRelationwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Shapefile relation is the entry point for working with Shapefile formats.</p>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="magellan.GeoJSON" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="GeoJSON"></a>
+      <a id="GeoJSON:GeoJSON"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="GeoJSON$.html"><span class="name">GeoJSON</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@GeoJSON" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Line" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Line"></a>
+      <a id="Line:Line"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Line$.html"><span class="name">Line</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Line" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.NullShape" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="NullShape"></a>
+      <a id="NullShape:NullShape"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="NullShape$.html"><span class="name">NullShape</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Shape.html" class="extype" name="magellan.Shape">Shape</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@NullShape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A null shape indicates an absence of geometric data.</p>
+    </li><li name="magellan.Point" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Point"></a>
+      <a id="Point:Point"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Point$.html"><span class="name">Point</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Point" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.PolyLine" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="PolyLine"></a>
+      <a id="PolyLine:PolyLine"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="PolyLine$.html"><span class="name">PolyLine</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@PolyLine" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Polygon" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Polygon"></a>
+      <a id="Polygon:Polygon"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Polygon$.html"><span class="name">Polygon</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Polygon" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Relate" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Relate"></a>
+      <a id="Relate:Relate"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Relate$.html"><span class="name">Relate</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Relate" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Shape" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Shape"></a>
+      <a id="Shape:Shape"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Shape$.html"><span class="name">Shape</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Shape" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.Utils" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Utils"></a>
+      <a id="Utils:Utils"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Utils$.html"><span class="name">Utils</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@Utils" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.WKTParser" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WKTParser"></a>
+      <a id="WKTParser:WKTParser"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="WKTParser$.html"><span class="name">WKTParser</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@WKTParser" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.catalyst" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="catalyst"></a>
+      <a id="catalyst:catalyst"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="catalyst/package.html"><span class="name">catalyst</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@catalyst" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.encoders" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="encoders"></a>
+      <a id="encoders:encoders"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="encoders/package.html"><span class="name">encoders</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@encoders" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.esri" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="esri"></a>
+      <a id="esri:esri"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="esri/package.html"><span class="name">esri</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@esri" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.geometry" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="geometry"></a>
+      <a id="geometry:geometry"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="geometry/package.html"><span class="name">geometry</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@geometry" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.index" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="index"></a>
+      <a id="index:index"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="index/package.html"><span class="name">index</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@index" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.io" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="io"></a>
+      <a id="io:io"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="io/package.html"><span class="name">io</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@io" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.mapreduce" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="mapreduce"></a>
+      <a id="mapreduce:mapreduce"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="mapreduce/package.html"><span class="name">mapreduce</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../index.html#magellan.package@mapreduce" title="Permalink" target="_top">
+        <img src="../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

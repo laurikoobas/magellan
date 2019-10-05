@@ -1,0 +1,174 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>index - magellan.index</title>
+          <meta name="description" content="index - magellan.index" />
+          <meta name="keywords" content="index magellan.index" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'magellan.index.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="magellan">magellan</a></p>
+        <h1>index</h1><span class="permalink">
+      <a href="../../index.html#magellan.index.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">index</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="magellan.index.Index" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="IndexextendsDataTypewithSerializable"></a>
+      <a id="Index:Index"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Index.html"><span class="name">Index</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.index.package@IndexextendsDataTypewithSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">An abstraction for a spatial curve based 2D Index.</p><div class="fullcomment"><div class="comment cmt"><p>An abstraction for a spatial curve based 2D Index.
+A spatial curve represents a two dimensional grid of a given precision.
+</p></div></div>
+    </li><li name="magellan.index.Indexer" visbl="pub" data-isabs="true" fullComment="no" group="Ungrouped">
+      <a id="Indexer[T&lt;:magellan.index.Index]extendsSerializable"></a>
+      <a id="Indexer[T&lt;:Index]:Indexer[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="Indexer.html"><span class="name">Indexer</span></a><span class="tparams">[<span name="T">T &lt;: <a href="Index.html" class="extype" name="magellan.index.Index">Index</a></span>]</span><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.index.package@Indexer[T&lt;:magellan.index.Index]extendsSerializable" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.index.ZOrderCurve" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ZOrderCurveextendsDataTypewithIndex"></a>
+      <a id="ZOrderCurve:ZOrderCurve"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ZOrderCurve.html"><span class="name">ZOrderCurve</span></a><span class="result"> extends <span class="extype" name="org.apache.spark.sql.types.DataType">DataType</span> with <a href="Index.html" class="extype" name="magellan.index.Index">Index</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.index.package@ZOrderCurveextendsDataTypewithIndex" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Annotations</dt><dd>
+                <span class="name">@SQLUserDefinedType</span><span class="args">()</span>
+              
+        </dd></dl></div>
+    </li><li name="magellan.index.ZOrderCurveIndexer" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ZOrderCurveIndexerextendsIndexer[magellan.index.ZOrderCurve]"></a>
+      <a id="ZOrderCurveIndexer:ZOrderCurveIndexer"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ZOrderCurveIndexer.html"><span class="name">ZOrderCurveIndexer</span></a><span class="result"> extends <a href="Indexer.html" class="extype" name="magellan.index.Indexer">Indexer</a>[<a href="ZOrderCurve.html" class="extype" name="magellan.index.ZOrderCurve">ZOrderCurve</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.index.package@ZOrderCurveIndexerextendsIndexer[magellan.index.ZOrderCurve]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

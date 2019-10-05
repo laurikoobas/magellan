@@ -1,0 +1,206 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>mapreduce - magellan.mapreduce</title>
+          <meta name="description" content="mapreduce - magellan.mapreduce" />
+          <meta name="keywords" content="mapreduce magellan.mapreduce" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../lib/template.js"></script>
+      <script type="text/javascript" src="../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../index.html';
+            var hash = 'magellan.mapreduce.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img alt="Package" src="../../lib/package_big.png" />
+        <p id="owner"><a href="../package.html" class="extype" name="magellan">magellan</a></p>
+        <h1>mapreduce</h1><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">mapreduce</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="magellan.mapreduce.OsmInputFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="OsmInputFormatextendsFileInputFormat[magellan.io.OsmKey,magellan.io.OsmShape]"></a>
+      <a id="OsmInputFormat:OsmInputFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="OsmInputFormat.html"><span class="name">OsmInputFormat</span></a><span class="result"> extends <span class="extype" name="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">FileInputFormat</span>[<a href="../io/OsmKey.html" class="extype" name="magellan.io.OsmKey">OsmKey</a>, <a href="../io/OsmShape.html" class="extype" name="magellan.io.OsmShape">OsmShape</a>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@OsmInputFormatextendsFileInputFormat[magellan.io.OsmKey,magellan.io.OsmShape]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.mapreduce.ShxInputFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShxInputFormatextendsFileInputFormat[org.apache.hadoop.io.Text,org.apache.hadoop.io.ArrayWritable]"></a>
+      <a id="ShxInputFormat:ShxInputFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShxInputFormat.html"><span class="name">ShxInputFormat</span></a><span class="result"> extends <span class="extype" name="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">FileInputFormat</span>[<span class="extype" name="org.apache.hadoop.io.Text">Text</span>, <span class="extype" name="org.apache.hadoop.io.ArrayWritable">ArrayWritable</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@ShxInputFormatextendsFileInputFormat[org.apache.hadoop.io.Text,org.apache.hadoop.io.ArrayWritable]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.mapreduce.ShxReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ShxReaderextendsRecordReader[org.apache.hadoop.io.Text,org.apache.hadoop.io.ArrayWritable]"></a>
+      <a id="ShxReader:ShxReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="ShxReader.html"><span class="name">ShxReader</span></a><span class="result"> extends <span class="extype" name="org.apache.hadoop.mapreduce.RecordReader">RecordReader</span>[<span class="extype" name="org.apache.hadoop.io.Text">Text</span>, <span class="extype" name="org.apache.hadoop.io.ArrayWritable">ArrayWritable</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@ShxReaderextendsRecordReader[org.apache.hadoop.io.Text,org.apache.hadoop.io.ArrayWritable]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.mapreduce.WholeFileInputFormat" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WholeFileInputFormatextendsFileInputFormat[org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.Text]"></a>
+      <a id="WholeFileInputFormat:WholeFileInputFormat"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WholeFileInputFormat.html"><span class="name">WholeFileInputFormat</span></a><span class="result"> extends <span class="extype" name="org.apache.hadoop.mapreduce.lib.input.FileInputFormat">FileInputFormat</span>[<span class="extype" name="org.apache.hadoop.io.NullWritable">NullWritable</span>, <span class="extype" name="org.apache.hadoop.io.Text">Text</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@WholeFileInputFormatextendsFileInputFormat[org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.Text]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li><li name="magellan.mapreduce.WholeFileReader" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="WholeFileReaderextendsRecordReader[org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.Text]"></a>
+      <a id="WholeFileReader:WholeFileReader"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="WholeFileReader.html"><span class="name">WholeFileReader</span></a><span class="result"> extends <span class="extype" name="org.apache.hadoop.mapreduce.RecordReader">RecordReader</span>[<span class="extype" name="org.apache.hadoop.io.NullWritable">NullWritable</span>, <span class="extype" name="org.apache.hadoop.io.Text">Text</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@WholeFileReaderextendsRecordReader[org.apache.hadoop.io.NullWritable,org.apache.hadoop.io.Text]" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="magellan.mapreduce.SplitInfos" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SplitInfos"></a>
+      <a id="SplitInfos:SplitInfos"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="SplitInfos$.html"><span class="name">SplitInfos</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../index.html#magellan.mapreduce.package@SplitInfos" title="Permalink" target="_top">
+        <img src="../../lib/permalink.png" alt="Permalink" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
