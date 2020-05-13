@@ -2,15 +2,15 @@ import com.typesafe.sbt.SbtGit.GitKeys._
 
 name := "magellan"
 
-version := "1.0.7-SNAPSHOT"
+version := "1.0.8"
 
 organization := "harsha2010"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.12"
 
-crossScalaVersions := Seq("2.11.8")
+crossScalaVersions := Seq("2.11.12")
 
-val sparkVersion = "2.4.3"
+val sparkVersion = "2.4.5"
 
 scalacOptions += "-optimize"
 
@@ -20,7 +20,7 @@ testSparkVersion := sys.props.get("spark.testVersion").getOrElse(sparkVersion)
 
 val testHadoopVersion = settingKey[String]("The version of Hadoop to test against.")
 
-testHadoopVersion := sys.props.getOrElse("hadoop.testVersion", "2.7.7")
+testHadoopVersion := sys.props.getOrElse("hadoop.testVersion", "2.7.3")
 
 //sparkComponents := Seq("core", "sql")
 
@@ -48,19 +48,19 @@ libraryDependencies ++= Seq(
 // for tests rather than using the sbt-spark-package plugin to provide them.
 //spIgnoreProvided := true
 
-publishMavenStyle := true
+// publishMavenStyle := true
 
 //spAppendScalaVersion := true
 
 //rspIncludeMaven := true
 
-publishTo := {
-  val nexus = "https://oss.sonatype.org/"
-  if (version.value.endsWith("SNAPSHOT"))
-    Some("snapshots" at nexus + "content/repositories/snapshots")
-  else
-    Some("releases"  at nexus + "service/local/staging/deploy/maven2")
-}
+// publishTo := {
+//   val nexus = "https://oss.sonatype.org/"
+//   if (version.value.endsWith("SNAPSHOT"))
+//     Some("snapshots" at nexus + "content/repositories/snapshots")
+//   else
+//     Some("releases"  at nexus + "service/local/staging/deploy/maven2")
+// }
 
 pomExtra := (
   <url>https://github.com/harsha2010/magellan</url>
@@ -92,7 +92,7 @@ scoverage.ScoverageKeys.coverageHighlighting := {
   else true
 }
 
-credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
+// credentials += Credentials(Path.userHome / ".ivy2" / ".sbtcredentials")
 
 licenses += "Apache-2.0" -> url("http://opensource.org/licenses/Apache-2.0")
 
